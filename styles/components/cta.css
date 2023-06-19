@@ -1,0 +1,89 @@
+.cta__text {
+  font-size: var(--size-3xl);
+  font-weight: 600;
+  color: var(--clr-light);
+  letter-spacing: 0.05rem;
+}
+
+.cta {
+  background-color: var(--clr-amber);
+  padding-block: 5rem;
+}
+
+.cta__btncontainer {
+  justify-self: end;
+}
+
+.cta__btn {
+  font-size: var(--size-3xl);
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  background-color: var(--clr-light);
+  color: var(--clr-amber);
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5),
+    0 6px 6px rgba(255, 255, 255, 0.5), 0 0 100px -10px var(--clr-amber);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
+    0 10px 10px rgba(255, 255, 255, 0.25), 0 0 120px -10px var(--clr-amber);
+}
+
+/* 2xl 4k*/
+/* @media (max-width: 1536px) {} */
+
+/* xl L Laptop*/
+@media (max-width: 1280px) {
+  .cta {
+    padding-block: 4rem;
+  }
+
+  .cta__text {
+    font-size: var(--size-2xl);
+  }
+
+  .cta__btn {
+    font-size: var(--size-2xl);
+  }
+}
+
+/* lg laptop*/
+@media (max-width: 1024px) {
+  .cta {
+    padding-block: 3rem;
+  }
+
+  .cta__text {
+    font-size: var(--size-xl);
+  }
+}
+
+/* md tablet*/
+@media (max-width: 768px) {
+  .cta {
+    padding-block: 3.2rem;
+  }
+
+  .cta__text {
+    font-size: var(--size-xl);
+  }
+
+  .cta__btncontainer {
+    margin-top: 1rem;
+    font-size: var(--size-xl);
+    margin-right: 50%;
+    transform: translate(50%);
+  }
+}
+
+/* sm small-tablet*/
+/* @media (max-width: 640px) {} */
+
+/* xs phone*/
+/* @media (max-width: 475px) {} */

@@ -5,10 +5,10 @@
   --clr-slate600: #475569;
   --clr-slate800: #1e293b;
   --clr-lime: #65a30d;
-  --clr-amber: rgb(217, 119, 6);
+  --clr-amber: #fe5000;
 
   /* lime rgb rgb(101, 163, 13) */
-  /* amber rgb rgb(217, 119, 6) */
+  /* amber rgb 	rgb(254, 80, 0) */
 
   /* to use colors - var(--clr-dark) */
 
@@ -70,6 +70,12 @@ svg {
   display: block;
   max-width: 100%;
   user-select: none;
+}
+
+.heading-tertiary {
+  color: var(--clr-slate600);
+  font-size: var(--size-2xl);
+  text-transform: uppercase;
 }
 
 .separador {

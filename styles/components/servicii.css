@@ -1,0 +1,35 @@
+.lista__servicii {
+  list-style: none;
+}
+
+.item__servicii {
+  font-size: var(--size-2xl);
+  margin-top: 1rem;
+}
+
+/* 2xl 4k*/
+/* @media (max-width: 1536px) {} */
+
+/* xl L Laptop*/
+/* @media (max-width: 1280px) {} */
+
+/* lg laptop*/
+@media (max-width: 1024px) {
+  .item__servicii {
+    font-size: var(--size-xl);
+    margin-top: 0.5rem;
+  }
+}
+
+/* md tablet*/
+@media (max-width: 768px) {
+  .item__servicii {
+    font-size: var(--size-lg);
+  }
+}
+
+/* sm small-tablet*/
+/* @media (max-width: 640px) {} */
+
+/* xs phone*/
+/* @media (max-width: 475px) {} */

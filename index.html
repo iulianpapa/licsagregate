@@ -15,106 +15,158 @@
     <link rel="stylesheet" href="styles/components/header.css" />
     <link rel="stylesheet" href="styles/components/hero.css" />
     <link rel="stylesheet" href="styles/components/about.css" />
+    <link rel="stylesheet" href="styles/components/servicii.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/components/cta.css" />
     <link rel="stylesheet" href="styles/utils.css" />
   </head>
   <body>
+    <!-- SECTION HEADER -->
+
     <header class="header shadow-header">
       <div class="container">
         <nav class="nav">
-          <h2 class="header__logo">LicsAgregate</h2>
+          <!-- <div class="header__logo">
+          </div>     -->
+          <img class="header__logo" src="/img/logo.svg" alt="" />
           <ul class="header__menu">
-            <li><a href="#scroll__about" class="header__link">Despre</a></li>
+            <li><a href="#" class="header__link">Despre</a></li>
             <li><a href="#" class="header__link">Contact</a></li>
             <li><a href="#" class="header__link">Servicii</a></li>
-            <button class="btn btnunu">Suna acum</button>
+            <button class="btn btn__header">Sună acum</button>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
+      <!-- SECTION HERO -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
-            Demolam trecutul <br />
+            Demolăm trecutul <br />
             pentru a construi viitorul
           </h1>
           <p class="hero__subtitle">
             Salut! Sunt aici. Esti pe maini bune. <br />
-            Poti rasufla usurat. Lasa-ma pe mine <br />
-            sa iti preiau problemele. <br />Hai sa incepem treaba!
+            Lasa-ma pe mine sa iti preiau problemele. <br />Hai sa incepem
+            treaba!
           </p>
-          <button class="btn btn__hero">0720572153</button>
+          <button class="btn btn__hero">0723266945</button>
         </div>
+      </section>
+      <div class="separador"></div>
+
+      <!-- SECTION SERVICII -->
+
+      <section class="section servicii">
+        <h1 class="container about__title">Servicii</h1>
+        <ul class="container lista__servicii">
+          <li class="item__servicii heading-tertiary">1. EXCAVARE/SAPARE</li>
+          <li class="item__servicii heading-tertiary">
+            2. DEMOLARI CONSTRUCTII
+          </li>
+          <li class="item__servicii heading-tertiary">
+            3. AMENAJARI SI REPARATII DRUMURI PRIVATE (excavatii, terasamente,
+            nivelare)
+          </li>
+          <li class="item__servicii heading-tertiary">
+            4. LIVRARE DE AGREGATE PENTRU CONSTRUCTII
+          </li>
+          <li class="item__servicii heading-tertiary">
+            5. PAMANT NEGRU AMENAJARI
+          </li>
+        </ul>
       </section>
       <div class="separador"></div>
 
       <!-- SECTION ABOUT -->
 
       <section id="scroll__about" class="section about">
+        <h1 class="container about__title">
+          Cele patru valori pe care ne bazam in relatia cu clientii
+        </h1>
         <div class="about__content | container even-columns">
           <div class="about__box">
             <div class="about__example">
-              <p class="about__number">01</p>
-              <h3 class="heading-tertiary">INCREDERE</h3>
-              <p class="about__description">
-                Cu o experienta de peste 20 de ani in domeniul constructiilor si
-                cu un portofoliu bogat al serviciilor executate, va stau la
-                dispozitie pentru a va transforma in realitate propria viziune.
-                Increderea va fi rasplatita printr-o munca reusita!
-              </p>
+              <div class="about__text__box">
+                <p class="about__number">01</p>
+                <h3 class="about__heading">Încredere</h3>
+                <p class="about__description">
+                  Cu o experiență de peste 20 de ani în domeniul amenajarii
+                  teritoriului și cu un portofoliu bogat al serviciilor
+                  executate, vă stau la dispoziție pentru a vă transforma în
+                  realitate propria viziune. Încrederea va fi răsplătită
+                  printr-o muncă reușită!
+                </p>
+              </div>
+              <div class="about__img__box">
+                <img class="about__image" src="/img/section-1.jpg" alt="" />
+              </div>
             </div>
             <div class="about__example">
-              <p class="about__number">02</p>
-              <h3 class="heading-tertiary">PRIETENIE</h3>
-              <p class="about__description">
-                Fiecare serviciu executat isi are povestea sa. Majoritatea
-                clientilor mei au devenit parte din povestea LICS AGREGATE prin
-                asocierea in business-uri viitoare, prin recomandarea fidela
-                catre alte societati/persoane fizice sau printr-o simpla
-                prietenie de peste 15 ani. Beneficii?! Ofer discount-uri
-                substantiale si pachete promotionale celor care aleg sa mi se
-                alature. Eu iti garantez calitatea superioara a serviciilor
-                executate, promptitudinea si corectitudinea ofertei, dar tu
-                trebuie sa imi fii si client, si potential prieten, pentru a
-                obtine eficienta si randamentul maxim. Ai curajul asta?!
-              </p>
+              <div class="about__text__box">
+                <p class="about__number">02</p>
+                <h3 class="about__heading">PRIETENIE</h3>
+                <p class="about__description">
+                  Fiecare serviciu executat isi are povestea sa. Majoritatea
+                  clientilor mei au devenit parte din povestea LICS AGREGATE
+                  prin asocierea in business-uri viitoare, prin recomandarea
+                  fidela catre alte societati/persoane fizice sau printr-o
+                  simpla prietenie de peste 15 ani. Beneficii?! Ofer
+                  <strong class="strong__black">discount-uri</strong>
+                  substantiale si pachete promotionale celor care aleg sa mi se
+                  alature.
+                </p>
+              </div>
+              <div class="about__img__box">
+                <img class="about__image" src="/img/section-2.jpg" alt="" />
+              </div>
             </div>
             <div class="about__example">
-              <p class="about__number">03</p>
-              <h3 class="heading-tertiary">PASIUNE</h3>
-              <p class="about__description">
-                Proiectul meu de business nu implica doar bani, bani, bani. Sunt
-                legat sufleteste de orice serviciu pe care il prestez si asta se
-                datoreaza doar pasiunii mele fata de acest domeniu. Pasiunea ma
-                determina sa imi ascult clientii, sa ii consiliez in legatura cu
-                serviciul solicitat si, in final, sa le ofer un zambet mareț pe
-                masura serviciilor executate. Urmaresc calitatea si nu doar
-                banii. Urmaresc sa fac oamenii fericiti si multumiti…asa cum o
-                fac de peste 20 de ani!
-              </p>
+              <div class="about__text__box">
+                <p class="about__number">03</p>
+                <h3 class="about__heading">PASIUNE</h3>
+                <p class="about__description">
+                  Proiectul meu de business nu implica doar latura financiara.
+                  Sunt legat sufleteste de orice serviciu pe care il prestez si
+                  asta se datoreaza doar pasiunii mele fata de acest domeniu.
+                  Pasiunea ma determina sa imi ascult clientii, sa ii consiliez
+                  in legatura cu serviciul solicitat si, in final, sa le ofer un
+                  zambet mareț pe masura serviciilor executate. Urmaresc
+                  calitatea si nu doar banii. Urmaresc sa fac oamenii fericiti
+                  si multumiti…asa cum o fac de peste 20 de ani!
+                </p>
+              </div>
+              <div class="about__img__box">
+                <img class="about__image" src="/img/section-3.jpg" alt="" />
+              </div>
             </div>
             <div class="about__example">
-              <p class="about__number">04</p>
-              <h3 class="heading-tertiary">PROFESIONALISM 100%</h3>
-              <p class="about__description">
-                Cunoaste-ne si te vei convinge! Asuma-ti riscul asta si eu iti
-                voi demonstra ca merita efortul!
-              </p>
+              <div class="about__text__box">
+                <p class="about__number">04</p>
+                <h3 class="about__heading">PROFESIONALISM 100%</h3>
+                <p class="about__description">
+                  Cunoaste-ne si te vei convinge! Asuma-ti riscul si eu iti voi
+                  demonstra ca merita efortul! Eu iti garantez calitatea
+                  superioara a serviciilor executate, promptitudinea si
+                  corectitudinea ofertei, dar tu trebuie sa imi fii si client,
+                  si potential prieten, pentru a obtine eficienta si randamentul
+                  maxim.
+                </p>
+              </div>
+              <div class="about__img__box">
+                <img class="about__image" src="/img/section-4.jpg" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="about__gallery">
-            <img class="about__image" src="img/section-1.jpg" alt="" />
-            <img class="about__image" src="img/section-2.jpg" alt="" />
-            <img class="about__image" src="img/section-3.jpg" alt="" />
-            <img class="about__image" src="img/section-4.jpg" alt="" />
           </div>
         </div>
       </section>
 
       <div class="separador"></div>
 
-      <!-- test section for bg color -->
+      <!-- SECTION CTA -->
 
       <section class="cta | section">
         <div class="container">
@@ -130,7 +182,10 @@
           </div>
         </div>
       </section>
-      <footer>
+
+      <!-- SECTION FOOTER -->
+
+      <!-- <footer>
         <div class="container">
           <div class="even-columns">
             <div>
@@ -159,7 +214,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </main>
     <script>
       $(window).scroll(function () {
