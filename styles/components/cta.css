@@ -86,4 +86,8 @@
 /* @media (max-width: 640px) {} */
 
 /* xs phone*/
-/* @media (max-width: 475px) {} */
+@media (max-width: 475px) {
+  .cta__text {
+    text-align: center;
+  }
+}

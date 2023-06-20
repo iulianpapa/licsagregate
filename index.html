@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/components/servicii.css" />
     <link rel="stylesheet" href="styles/components/footer.css" />
     <link rel="stylesheet" href="styles/components/cta.css" />
+    <link rel="stylesheet" href="styles/components/mobile-nav.css" />
     <link rel="stylesheet" href="styles/utils.css" />
   </head>
   <body>
@@ -30,14 +31,49 @@
           </div>     -->
           <img class="header__logo" src="./img/logo.svg" alt="" />
           <ul class="header__menu">
-            <li><a href="#" class="header__link">Despre</a></li>
-            <li><a href="#" class="header__link">Contact</a></li>
-            <li><a href="#" class="header__link">Servicii</a></li>
+            <li>
+              <a href="#scroll__servicii" class="header__link">Servicii</a>
+            </li>
+            <li><a href="#scroll__about" class="header__link">Despre</a></li>
+            <li><a href="#scroll__contact" class="header__link">Contact</a></li>
             <button class="btn btn__header">Sună acum</button>
           </ul>
+          <button class="header__bars">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a href="#scroll__servicii" class="mobile-nav__link">Servicii</a>
+          </li>
+          <li>
+            <a href="#scroll__about" class="mobile-nav__link">Despre</a>
+          </li>
+          <li>
+            <a href="#scroll__contact" class="mobile-nav__link">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav__btn btn">Suna acum</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <!-- SECTION HERO -->
@@ -60,7 +96,7 @@
 
       <!-- SECTION SERVICII -->
 
-      <section class="section servicii">
+      <section id="scroll__servicii" class="section servicii">
         <h1 class="container about__title">Servicii</h1>
         <ul class="container lista__servicii">
           <li class="item__servicii heading-tertiary">1. EXCAVARE/SAPARE</li>
@@ -168,7 +204,7 @@
 
       <!-- SECTION CTA -->
 
-      <section class="cta | section">
+      <section id="scroll__contact" class="cta | section">
         <div class="container">
           <div class="even-columns">
             <div>
@@ -217,6 +253,20 @@
       </footer> -->
     </main>
     <script>
+      const header = document.querySelector(".header");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY) {
+          header.classList.add("nav-hidden");
+        } else {
+          header.classList.remove("nav-hidden");
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    </script>
+    <script>
       $(window).scroll(function () {
         if ($(window).scrollTop() >= 30) {
           $("header").addClass("shadow-header");
@@ -225,5 +275,6 @@
         }
       });
     </script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
