@@ -9,6 +9,6 @@ import "../styles/components/cta.css";
 import "../styles/components/footer.css";
 import "../styles/utils.css";
 
-import mobileNav from "./utils/mobile-nav.js";
+import mobileNav from "./utils/mobile-nav";
 
 mobileNav();
