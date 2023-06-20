@@ -133,6 +133,19 @@ header {
 
 /* md tablet*/
 @media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .nav-hidden {
+    transform: translateY(-12.25rem);
+  }
+
   .nav {
     padding: 1rem 0.2rem;
   }
@@ -176,6 +189,10 @@ header {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  .nav-hidden {
+    transform: translateY(-12.25rem);
   }
 
   .header__bars {
